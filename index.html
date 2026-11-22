@@ -1006,12 +1006,12 @@ details.tl .tl-body{display:block;padding:6px 8px 36px 194px}
         <div class="rec-chips" id="recChips" role="group" aria-label="Skills">
           <button type="button" class="rc mono" data-k="recruit" data-i18n="sk.recruit">Recruitment</button>
           <button type="button" class="rc mono" data-k="ld" data-i18n="sk.ld">Learning &amp; development</button>
-          <button type="button" class="rc mono" data-k="data" data-i18n="sk.data">Data &amp; analytics</button>
-          <button type="button" class="rc mono" data-k="ai" data-i18n="sk.ai">AI in HR</button>
-          <button type="button" class="rc mono" data-k="office" data-i18n="sk.office">Office &amp; Excel</button>
+          <button type="button" class="rc mono" data-k="ai" data-i18n="sk.ai">AI</button>
           <button type="button" class="rc mono" data-k="research" data-i18n="sk.research">Research</button>
+          <button type="button" class="rc mono" data-k="data" data-i18n="sk.data">Data analysis</button>
+          <button type="button" class="rc mono" data-k="office" data-i18n="sk.office">Microsoft Office</button>
+          <button type="button" class="rc mono" data-k="law" data-i18n="sk.law">Legal literacy</button>
           <button type="button" class="rc mono" data-k="lead" data-i18n="sk.lead">Leadership</button>
-          <button type="button" class="rc mono" data-k="law" data-i18n="sk.law">Law</button>
           <button type="button" class="rc mono" data-k="lang" data-i18n="sk.lang">Languages</button>
         </div>
         <ul class="rec-res" id="recRes" aria-live="polite"></ul>
@@ -1553,12 +1553,12 @@ const DICT = {
     'rec.clear': "Zurücksetzen",
     'sk.recruit': "Recruiting",
     'sk.ld': "Lernen & Entwicklung",
-    'sk.data': "Daten & Analytics",
-    'sk.ai': "KI im HR",
-    'sk.office': "Office & Excel",
+    'sk.data': "Datenanalyse",
+    'sk.ai': "KI",
+    'sk.office': "Microsoft Office",
     'sk.research': "Forschung",
     'sk.lead': "Führung",
-    'sk.law': "Recht",
+    'sk.law': "Rechtskompetenz",
     'sk.lang': "Sprachen",
     'ce.more': "Weitere folgen.",
     'jt.work': "Berufserfahrung",
@@ -1749,12 +1749,12 @@ const DICT = {
     'rec.clear': "清除",
     'sk.recruit': "招聘",
     'sk.ld': "学习与发展",
-    'sk.data': "数据与分析",
-    'sk.ai': "HR 中的 AI",
-    'sk.office': "办公与 Excel",
+    'sk.data': "数据分析",
+    'sk.ai': "AI",
+    'sk.office': "Microsoft Office",
     'sk.research': "研究",
     'sk.lead': "领导力",
-    'sk.law': "法律",
+    'sk.law': "法律素养",
     'sk.lang': "语言",
     'ce.more': "更多证书即将补充。",
     'jt.work': "工作经历",
@@ -2951,7 +2951,7 @@ $$('#qdots i').forEach((d, k) => { const f = () => { setQ(k); }; d.addEventListe
 
 
 /* ===== Bộ lọc cho nhà tuyển dụng ===== */
-const SKILL_EN = { recruit: 'Recruitment', ld: 'Learning & development', data: 'Data & analytics', ai: 'AI in HR', office: 'Office & Excel', research: 'Research', lead: 'Leadership', law: 'Law', lang: 'Languages' };
+const SKILL_EN = { recruit: 'Recruitment', ld: 'Learning & development', data: 'Data analysis', ai: 'AI', office: 'Microsoft Office', research: 'Research', lead: 'Leadership', law: 'Legal literacy', lang: 'Languages' };
 const SKILLS = [
   { t: 'Executive Search & Selection intern', w: 'Talentnet · CV screening, LinkedIn Recruiter, candidate sourcing and matching', k: ['recruit'], v: 'about', id: 'journey' },
   { t: 'Recruited and onboarded 50 collaborators', w: 'HRC-NEU · Head of R&D Department', k: ['recruit', 'lead'], v: 'about', id: 'journey' },
